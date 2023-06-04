@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Desafio Media Query</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="titulo"><i class="fa-solid fa-car icono"></i><span>Repuestos car</span></div>
+            <!-- <div class="menuHam"><i  class="fa-solid fa-bars icono"></i></div> -->
+            <div class="menuLateral">
+                <div><a href="#">Inicio</a></div>
+                <div><a href="#catalogo">Catalogo</a></div>
+                <div><a href="#ofertas">Oferta</a></div>
+                <div><a href="#footer">Contacto</a></div>
+            </div>
+        </header>
+        <section class="ordenar">
+            <div class="automovil">
+                <img src="./assets/img/auto2.svg" class="autoMover" width="100px" alt="Auto">
+            </div>
+            <p>Ordenar por:</p>
+            <select name="selectOrdenar" id="selectOrdenar">
+                <option value="1">Precio</option>
+                <option value="2">Valor</option>
+            </select>
+        </section>
+        <main id="catalogo">
+            <div class="card">
+                <img src="https://picsum.photos/300"  alt="ejemplo">
+                <p>Amortiguador</p>
+                <input type="button" value="ver mas">
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/300"  alt="ejemplo">
+                <p>Motor de partida</p>
+                <input type="button" value="ver mas">
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/300"  alt="ejemplo">
+                <p>Pastillas de frenos</p>
+                <input type="button" value="ver mas">
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/300"  alt="ejemplo">
+                <p>Bomba de Agua</p>
+                <input type="button" value="ver mas">
+            </div>
+            <!--<div class="card">
+                <img src="https://picsum.photos/300"  alt="ejemplo">
+                <p>Model : city car</p>
+                <input type="button" value="ver mas">
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/300"  alt="ejemplo">
+                <p>Model : city car</p>
+                <input type="button" value="ver mas">
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/300"  alt="ejemplo">
+                <p>Model : city car</p>
+                <input type="button" value="ver mas">
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/300"  alt="ejemplo">
+                <p>Model : city car</p>
+                <input type="button" value="ver mas">
+            </div> -->
+        </main>
+        <section class="paginacion">
+            <div class="atras"><i class="fa-sharp fa-solid fa-arrow-left fa-2xs"></i></div>
+            <div class="uno">1</div>
+            <div class="dos">2</div>
+            <div class="tres">3</div>
+            <div class="siguiente"><i class="fa-sharp fa-solid fa-arrow-right fa-2xs"></i></div>
+        </section>
+        <section id="ofertas" class="ofertas">
+            <h3>Ofertas</h3>
+            <div class="lista_ofertas">
+                <div class="card2">
+                    <img src="https://picsum.photos/100"  alt="ejemplo">
+                    <p>Amortiguador</p>
+                    <span class="precio">$10.000</span>
+                    <input type="button" value="ver mas">
+                </div>
+                <div class="card2">
+                    <img src="https://picsum.photos/100"  alt="ejemplo">
+                    <p>Motor de partida</p>
+                    <span class="precio">$10.000</span>
+                    <input type="button" value="ver mas">
+                </div>
+                <div class="card2">
+                    <img src="https://picsum.photos/100"  alt="ejemplo">
+                    <p>Pastillas de frenos</p>
+                    <span class="precio">$10.000</span>
+                    <input type="button" value="ver mas">
+                </div>
+                <div class="card2">
+                    <img src="https://picsum.photos/100"  alt="ejemplo">
+                    <p>Bomba de Agua</p>
+                    <span class="precio">$10.000</span>
+                    <input type="button" value="ver mas">
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="contacto">
+                <i class="fa-regular fa-envelope fa-lg"></i>
+                <span>contacto_repuestos@gmail.com</span>
+            </div>
+            <div class="redes">
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>            
+                <span>todos los derechos reservados</span>
+            </div>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
+<script src="https://kit.fontawesome.com/7fdf732092.js" crossorigin="anonymous"></script>

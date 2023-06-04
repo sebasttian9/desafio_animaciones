@@ -1,0 +1,506 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.precio {
+    color: red;
+    font-weight: bold;
+}
+
+
+@media (max-width: 576px) {
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "ordenar"
+    "main"
+    "paginacion"
+    "ofertas"
+    "footer";
+    
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(67 67 203);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.ofertas{
+    grid-area: ofertas;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card2{
+    border: 0.5px solid #e2dddd;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* width: 20%; */
+    width: 150px;
+    height: 216px;
+    margin-top: 1.5rem;
+    border-radius: 0.2rem;
+}
+
+.card2 input {
+    background-color: rgb(41, 41, 144);
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+    padding: 0.7rem;
+}
+
+.lista_ofertas{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.menuLateral {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.menuLateral a {
+    text-decoration: none;
+    color: white;
+}
+
+.icono {
+    margin-right: 10px;
+}
+.titulo {
+    margin-left: 10px;
+    /* display: none; */
+}
+
+.ordenar {
+    grid-area: ordenar;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.ordenar select {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: 0.5px solid #e2dddd;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 78%;
+    margin-top: 1.5rem;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in;
+}
+
+.card:hover {
+
+    transform: scale(1.1);
+}
+
+.card img {
+    background-size: cover;
+    width: 90%;
+    margin-top: 1rem;
+    transition: filter 0.3s ease-out;
+    filter: grayscale(100%);
+    
+}
+
+.card img:hover{
+    filter: grayscale(0%);
+    
+}
+
+.card input {
+    background-color: rgb(41, 41, 144);
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+    padding: 0.7rem;
+}
+
+.paginacion {
+    grid-area: paginacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+    
+}
+
+.paginacion div {
+    border: 0.1px solid #d7d4d4;
+    padding: 0.5rem;
+    color: rgb(60, 137, 230);
+    
+}
+
+.paginacion div:hover {
+    background-color: gray;
+
+}
+
+.atras{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.siguiente{
+
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.contacto{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    gap: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(41, 41, 144);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+}
+
+
+.automovil{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.autoMover {
+    animation: acelerar 7s infinite;
+}
+
+@keyframes acelerar {
+    from { transform: translateX(0);}
+    to { transform: translateX(300%);}
+}
+
+
+}
+
+
+@media (max-width: 370px) {
+
+    .titulo {
+        display: none;
+    }
+
+    .menuLateral {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        /* margin-right: 10px; */
+    }
+
+    header {
+        /* grid-area: header;
+        background-color: rgb(67 67 203);
+        color: white;
+        display: flex; */
+        justify-content: center;
+        /* align-items: center;
+        height: 4rem; */
+    }
+
+    .automovil{
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .autoMover {
+        animation: acelerar 7s infinite;
+    }
+
+    @keyframes acelerar {
+        from { transform: translateX(0);}
+        to { transform: translateX(200%);}
+    }
+}
+
+
+
+/* ////////////////////////////////////////////////////////// CSS para version desktop  //////////////////////////////*/ 
+
+@media (min-width: 576px) {
+    /* … */
+
+
+    .contenedor {
+        display: grid;
+        grid-template-areas: 
+        "header ordenar ordenar ordenar"
+        "header main main main"
+        "header main main main"
+        "header paginacion paginacion paginacion"
+        "header ofertas ofertas ofertas"
+        "footer footer footer footer";
+           min-height: 100vh;
+    }
+
+    header {
+        grid-area: header;
+        background-color: rgb(67 67 203);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        /* width: 150px; */
+
+    }
+
+    .ofertas{
+        grid-area: ofertas;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .card img {
+        background-size: cover;
+        width: 90%;
+        margin-top: 1rem;
+        
+    }
+    .card2{
+        border: 0.5px solid #e2dddd;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* width: 20%; */
+        width: 150px;
+        height: 216px;
+        margin-top: 1.5rem;
+        border-radius: 0.2rem;
+    }
+
+    .card2 input {
+        background-color: rgb(41, 41, 144);
+        color: white;
+        border: 0px;
+        border-radius: 3px;
+        padding: 0.7rem;
+    }
+
+    .lista_ofertas{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 3rem;
+    }
+
+    .automovil{
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .autoMover {
+        animation: acelerar 7s infinite;
+    }
+
+    @keyframes acelerar {
+        from { transform: translateX(0);}
+        to { transform: translateX(600%);}
+    }
+
+    .icono {
+        margin-right: 10px;
+    }
+
+    header .titulo {
+        margin-top: 1.5rem;
+    }
+
+    .menuHam {
+        display: none;
+    }
+
+    .menuLateral{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+        gap: 10px;
+    }
+
+    .menuLateral a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .ordenar {
+        grid-area: ordenar;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .ordenar select {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0.3rem;
+    }
+
+    main {
+        grid-area: main;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .card{
+        border: 0.5px solid #e2dddd;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* width: 20%; */
+        width: 250px;
+        height: 350px;
+        margin-top: 1.5rem;
+        border-radius: 0.2rem;
+        transition: transform 0.3s ease-in;
+    }
+
+    .card:hover {
+
+        transform: scale(1.1);
+    }
+    
+    .card img {
+        background-size: cover;
+        width: 90%;
+        margin-top: 1rem;
+        transition: filter 0.5s ease-out;
+        filter: grayscale(100%);
+        
+    }
+
+    .card img:hover{
+        filter: grayscale(0%);
+        
+    }
+    
+    .card input {
+        background-color: rgb(41, 41, 144);
+        color: white;
+        border: 0px;
+        border-radius: 3px;
+        padding: 0.7rem;
+    }
+    
+    .paginacion {
+        grid-area: paginacion;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0 2rem 0;
+        
+    }
+    
+    .paginacion div {
+        border: 0.1px solid #d7d4d4;
+        padding: 0.5rem;
+        color: rgb(60, 137, 230);
+        
+    }
+    
+    .paginacion div:hover {
+        background-color: gray;
+    
+    }
+    
+    .atras{
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    
+    .siguiente{
+    
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+
+    footer {
+        grid-area: footer;
+        background-color: rgb(41, 41, 144);
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+        text-align: center;
+        height: 100px;
+    }
+
+  }
